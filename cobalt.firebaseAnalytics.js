@@ -1,5 +1,6 @@
 (function(cobalt) {
   var plugin = {
+    name: 'CobaltFirebaseAnalyticsPlugin',
     classes: {
       ios: 'FirebaseAnalyticsPlugin',
       android: 'io.kristal.firebaseanalyticscobaltplugin.FirebaseAnalyticsPlugin'
