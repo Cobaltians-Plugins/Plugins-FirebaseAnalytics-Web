@@ -12,13 +12,10 @@
     },
     logEvent: function(eventName, eventParams) {
       if (eventName) {
-        var data = {
+        cobalt.plugins.send(this, 'logEvent', {
           event: eventName,
           params: eventParams
-        };
-        cobalt.plugins.send(this, 'logEvent', data);
-      } else {
-        cobalt.log('no event name for firebaseAnalytics.logEvent')
+        });
       }
 
     },
